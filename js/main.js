@@ -33,8 +33,8 @@ function signInHandler() {
   let inputusername = usernameEl.value;
   let inputpassword = passwordEl.value;
   for (let i = 0; i < users.length; i++) {
-    if (userCheck(inputusername) == i) {
-      alert("Valid login");
+    if (userCheck(inputusername) != -1) {
+      alert("valid login");
     } else if (userCheck(inputusername) == -1) {
       alert("Invalid login");
     }
